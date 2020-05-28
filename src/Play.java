@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,7 +26,7 @@ public class Play {
     private String wordToFind;
     private char[] wordFound;
     private int nbErrors;
-    private ArrayList < String > letters = new ArrayList < > ();
+    private final ArrayList < String > letters = new ArrayList < > ();
     private String nextWordToFind() {
         return WORDS[RANDOM.nextInt(WORDS.length)];
     }
@@ -38,9 +39,7 @@ public class Play {
 
         wordFound = new char[wordToFind.length()];
 
-        for (int i = 0; i < wordFound.length; i++) {
-            wordFound[i] = '_';
-        }
+        Arrays.fill(wordFound, '_');
     }
 
     public boolean wordFound() {
