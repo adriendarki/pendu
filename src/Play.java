@@ -22,7 +22,8 @@ public class Play {
     };
 
     public static final Random RANDOM = new Random();
-    public static final int MAX_ERRORS = 8;
+    public static final int MAX_ERRORS = 9;
+    private int incGuessCount = 0;
     private String wordToFind;
     private char[] wordFound;
     private int nbErrors;
@@ -56,8 +57,8 @@ public class Play {
                 }
             } else {
                 nbErrors++;
+                incGuessCount++;
             }
-
             letters.add(c);
         }
     }
@@ -86,20 +87,153 @@ public class Play {
                 }
                 enter(str);
                 System.out.println("\n" + wordFoundContent());
+                drawGallows();
                 if (wordFound()) {
                     System.out.println("\nYou win!");
                     break;
-                } else {
+                }
+                else
+                {
                     System.out.println("\n=> Nb tries remaining : " + (MAX_ERRORS - nbErrors));
                 }
             }
 
-            if (nbErrors == MAX_ERRORS) {
+            if (nbErrors == MAX_ERRORS ) {
                 System.out.println("\nYou lose!");
                 System.out.println("=> Word to find was : " + wordToFind);
             }
         }
     }
+    //Hangman Draw
+    public void defaultMan(){
+        System.out.println("      ");
+        System.out.println("      ");
+        System.out.println("      ");
+        System.out.println("      ");
+        System.out.println("      ");
+        System.out.println("_|____");
+    }
+    public void oneMan(){
+        System.out.println("        ");
+        System.out.println("        ");
+        System.out.println("        ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void twoMan(){
+        System.out.println("        ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void threeMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void fourMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |   @  ");
+        System.out.println(" |      ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void fiveMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |   @  ");
+        System.out.println(" |   |  ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void sixMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |   @  ");
+        System.out.println(" |  /|  ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void sevenMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |   @  ");
+        System.out.println(" |  /|\\ ");
+        System.out.println(" |      ");
+        System.out.println("_|______");
+    }
+    public void heightMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |   @  ");
+        System.out.println(" |  /|\\ ");
+        System.out.println(" |  /   ");
+        System.out.println("_|______");
+    }
+    public void nineMan(){
+        System.out.println("_______ ");
+        System.out.println(" |   |  ");
+        System.out.println(" |   @  ");
+        System.out.println(" |  /|\\ ");
+        System.out.println(" |  / \\ ");
+        System.out.println("_|______");
+    }
+    public void drawGallows()
+    {
+        if(incGuessCount==0)
+        {
+            defaultMan();
+        }
+
+        if(incGuessCount==1)
+        {
+            oneMan();
+        }
+
+        if(incGuessCount==2)
+        {
+            twoMan();
+        }
+
+        if(incGuessCount==3)
+        {
+            threeMan();
+        }
+
+        if(incGuessCount==4)
+        {
+            fourMan();
+        }
+
+        if(incGuessCount==5)
+        {
+            fiveMan();
+        }
+        if(incGuessCount==6)
+        {
+            sixMan();
+        }
+        if(incGuessCount==7)
+        {
+            sevenMan();
+        }
+        if(incGuessCount==8)
+        {
+            heightMan();
+        }
+        if(incGuessCount==9)
+        {
+            nineMan();
+        }
+    }
+
 
     public static void main(String[] args) {
         System.out.println("\n \n ooooooooo.                               .o8                   .o. \n" +
