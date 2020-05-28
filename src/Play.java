@@ -51,18 +51,18 @@ public class Play {
             };
     public static final String[] QUOTESAMBIANCE =
             {
-                    "Le bourreau vous lance un regard gourmand...gênant...",
-                    "La foule vous insulte copieusement. Les ingrats.",
-                    "Vous vous rappelez de vos parents vous disant que Pirate était un piètre choix de carrière ?",
-                    "Hadopi : 1. Vous : 0",
-                    "Vous n'avez jamais été très sportif mais c'est l'occasion de montrer votre meilleur jeu de jambes !",
-                    "Michel avait raison : 'philosopher, c'est apprendre à mourir'. Philoso...QUOI ?",
-                    "Le parfum de cette corde en chanvre est étonnament agréable. Quelqu'un a du feu ?",
-                    "Une pensée vous vient : quand vos pieds descendront, votre âme montera.",
-                    "Si seulement vous pouviez vous gratter le nez...Ah merci m'dame pour cette tomate pourrite !",
-                    "'Touchez ma bosse...non, pas celle-là', c'est peut-être à cause de cette répartie que vous en êtes là...",
-                    "Et dire qu'il y a des manspreaders qui n'iront jamais à l'échaffaud",
-                    "La présence d'un autre condamné à vos côtés vous fait chaud au coeur. Aaaah la foule chante.",
+                    "*Le bourreau vous lance un regard gourmand...gênant...*",
+                    "*La foule vous insulte copieusement. Les ingrats.*",
+                    "*Vous vous rappelez de vos parents vous disant que Pirate était un piètre choix de carrière ?*",
+                    "*Hadopi : 1. Vous : 0*",
+                    "*Vous n'avez jamais été très sportif mais c'est l'occasion de montrer votre meilleur jeu de jambes !*",
+                    "*Michel avait raison : 'philosopher, c'est apprendre à mourir'. Philoso...QUOI ?*",
+                    "*Le parfum de cette corde en chanvre est étonnament agréable. Quelqu'un a du feu ?*",
+                    "*Une pensée vous vient : quand vos pieds descendront, votre âme montera.*",
+                    "*Si seulement vous pouviez vous gratter le nez...Ah merci m'dame pour cette tomate pourrite !*",
+                    "*'Touchez ma bosse...non, pas celle-là', c'est peut-être à cause de cette répartie que vous en êtes là...*",
+                    "*Et dire qu'il y a des manspreaders qui n'iront jamais à l'échaffaud*",
+                    "*La présence d'un autre condamné à vos côtés vous fait chaud au coeur. Aaaah la foule chante.*",
             };
 
 
