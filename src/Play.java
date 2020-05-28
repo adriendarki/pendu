@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-
+import java.util.regex.*;
 
 
 public class Play extends Word {
