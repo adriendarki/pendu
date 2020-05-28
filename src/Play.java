@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-// We are going to create a Hangman Game with Java keywords :)
+
 public class Play {
 
     // Java Keywords
