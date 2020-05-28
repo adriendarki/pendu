@@ -56,13 +56,16 @@ public class Play {
                     "*Vous vous rappelez de vos parents vous disant que Pirate était un piètre choix de carrière ?*",
                     "*Hadopi : 1. Vous : 0*",
                     "*Vous n'avez jamais été très sportif mais c'est l'occasion de montrer votre meilleur jeu de jambes !*",
-                    "*Michel avait raison : 'philosopher, c'est apprendre à mourir'. Philoso...QUOI ?*",
+                    "*Michel avait raison : 'philosopher, c'est apprendre à mourir'*",
                     "*Le parfum de cette corde en chanvre est étonnament agréable. Quelqu'un a du feu ?*",
                     "*Une pensée vous vient : quand vos pieds descendront, votre âme montera.*",
                     "*Si seulement vous pouviez vous gratter le nez...Ah merci m'dame pour cette tomate pourrite !*",
                     "*'Touchez ma bosse...non, pas celle-là', c'est peut-être à cause de cette répartie que vous en êtes là...*",
                     "*Et dire qu'il y a des manspreaders qui n'iront jamais à l'échaffaud*",
-                    "*La présence d'un autre condamné à vos côtés vous fait chaud au coeur. Aaaah la foule chante.*",
+                    "*La présence d'un autre condamné à vos côtés vous fait chaud au coeur. Un SJW apparemment.*",
+                    "Quelle indignité !! (si seulement vous aviez des talonnettes...)",
+                    "Ok Google : Fraude fiscale ministre. Google : Qu'a eu Zack en 2015 ?",
+                    "'Coucou ! Tu veux voir mes bytes ?' ... Vous n'auriez jamais dû voler et avaler ces nanites...",
             };
 
 
@@ -170,21 +173,21 @@ public class Play {
 
         System.out.println("     .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@               \n" +
                 "    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@               \n" +
-                "     .&&&&&&@@@&&&&&&&&&&&&&@@@@@@@@&&&&&&&&&&&&&&&&&&&@@@@@               \n" +
-                "            @@/               %@@@@@@@                 @@@@@               \n" +
-                "            @@/                 .@@@@@@@,              @@@@@               \n" +
-                "            @@/                    #@@@@@@&            @@@@@               \n" +
-                "            @@/                      .@@@@@@@,         @@@@@               \n" +
-                "            @@/                         %@@@@@@&       @@@@@               \n" +
-                "            @@/                           .@@@@@@@,    @@@@@               \n" +
-                "    #@@@@%. @@/                              #@@@@@@&  @@@@@               \n" +
-                "  @@@@@@@@@@@@/                                .@@@@@@@@@@@@               \n" +
+                "     .&&&&&&@@@&&&&&&&&&&&&&@@@@@@@@&&&&&&&&&&&&&&&&&&&B@@@M               \n" +
+                "            L@/               %@@@@@@@                 L@@@E               \n" +
+                "            @@/                 .@@@@@@@,              A@@@D               \n" +
+                "            R@/                    #@@@@@@&            C@@@E               \n" +
+                "            @@/                      .@@@@@@@,         K@@@F               \n" +
+                "            E@/                         %@@@@@@&       R@@@@               \n" +
+                "            @E/                           .@@@@@@@,    O@@@@               \n" +
+                "    #@@@@%. M@/                              #@@@@@@&  C@@@@               \n" +
+                "  @@@@@@@@@@@@/                                .@@@@@@@K@@@@               \n" +
                 " @@@@@@@@@@@@@/                                   #@@@@@@@@@               \n" +
                 " *@@@@@@@@@@@@@@&*                                  .@@@@@@@               \n" +
                 "   (@@@@@@@@@@@@@@@@                                   @@@@@               \n" +
                 "     ,@@@@@@@@@@@@@@@&                                 @@@@@               \n" +
-                "    &@@@@@@@@@@@@@@@@@@                                @@@@@               \n" +
-                "   @@@@@@@@@@@@@@@%@@@@@                               @@@@@               \n" +
+                "    &@@@@@@R@F@@@@@@@@@                                @@@@@               \n" +
+                "   @@@@@@@@@G@J@@@%@@@@@                               @@@@@               \n" +
                 "  @@@@@#%@@@@@@@@@ @@@@@(                              @@@@@               \n" +
                 " @@@@@& %@@@@@@@@@ ,@@@@@                              @@@@@               \n" +
                 " @@@@@  %@@@@@@@@@  @@@@@.                             @@@@@               \n" +
@@ -192,10 +195,10 @@ public class Play {
                 " @@@@@  #@@@@@@@@@  ,@@@@,                             @@@@@               \n" +
                 "        #@@@@@@@@@                                     @@@@@               \n" +
                 "        &@@@@@@@@@                                    @@@@@@(              \n" +
-                "        @@@@@@@@@@                                   @@@@@@@@@             \n" +
-                "       ,@@@@@@@@@@                                  @@@@@@@@@@@            \n" +
-                "       #@@@@#@@@@@.                                @@@@@@@@@@@@@.          \n" +
-                "       @@@@@,@@@@@*                               @@@@@@@@@@@@@@@/         \n" +
+                "        @@@@@@@@@@                                   @V@E@R@N@             \n" +
+                "       ,@@@F@I@@@@                                  @@@@@@@@@@@            \n" +
+                "       #@@@@#@@@@@.                                @M@C@R0N@@@@@.          \n" +
+                "       @@@@@,@@@@@*                               @@@@@B@U@Z@I@N@/         \n" +
                 "       @@@@@ %@@@@#                             ,@@@@@,@@@@@ @@@@@%        \n" +
                 "       %@@@# *@@@@#                            /@@@@@. @@@@@  @@@@@@       \n" +
                 "                                              #@@@@@   @@@@@   %@@@@@      \n" +
