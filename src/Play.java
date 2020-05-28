@@ -35,8 +35,8 @@ public class Play {
             "La pendaison sans chute, (ou de faible hauteur) n'est pas un moyen efficace : la compression des veines jugulaires empêchant le retour du sang \n" +
                     "depuis la tête vers le cœur, d'où un œdème et une cyanose visibles au niveau de la face et de la langue,\n" +
                     "et un œdème cérébral entraînant une perte de connaissance assez lente suivie d'un décès assez tardif",
-            "Les soldats nazis avaient élaboré, pendant la Seconde Guerre mondiale, une technique de pendaison lente qui consistait à attacher \n " +
-                    "l'une des jambes du supplicié afin qu'elle ne touche pas le sol,\n " +
+            "Les soldats nazis avaient élaboré, pendant la Seconde Guerre mondiale, une technique de pendaison lente qui consistait à attacher \n" +
+                    "l'une des jambes du supplicié afin qu'elle ne touche pas le sol,\n" +
                     "laissant à l'autre le soin de supporter à elle seule le poids du corps.",
             "Mais on a relaté certaines exécutions durant lesquelles cette technique n'eut pas le résultat escompté :\n" +
                     "soit le condamné eut la tête arrachée à cause d'une trop grande énergie cinétique accumulée lors de la chute (corde trop longue),\n" +
@@ -48,6 +48,21 @@ public class Play {
                     "vers la potence avant de lui passer la cravate de chanvre autour du cou.",
             "Pendant la Révolution française, mettre à la lanterne, s'est dit populairement \n" +
                     "pour pendre aux cordes d'un réverbère ceux que désignait la fureur populaire."
+            };
+    public static final String[] QUOTESAMBIANCE =
+            {
+                    "Le bourreau vous lance un regard gourmand...gênant...",
+                    "La foule vous insulte copieusement. Les ingrats.",
+                    "Vous vous rappelez de vos parents vous disant que Pirate était un piètre choix de carrière ?",
+                    "Hadopi : 1. Vous : 0",
+                    "Vous n'avez jamais été très sportif mais c'est l'occasion de montrer votre meilleur jeu de jambes !",
+                    "Michel avait raison : 'philosopher, c'est apprendre à mourir'. Philoso...QUOI ?",
+                    "Le parfum de cette corde en chanvre est étonnament agréable. Quelqu'un a du feu ?",
+                    "Une pensée vous vient : quand vos pieds descendront, votre âme montera.",
+                    "Si seulement vous pouviez vous gratter le nez...Ah merci m'dame pour cette tomate pourrite !",
+                    "'Touchez ma bosse...non, pas celle-là', c'est peut-être à cause de cette répartie que vous en êtes là...",
+                    "Et dire qu'il y a des manspreaders qui n'iront jamais à l'échaffaud",
+                    "La présence d'un autre condamné à vos côtés vous fait chaud au coeur. Aaaah la foule chante.",
             };
 
 
@@ -62,6 +77,9 @@ public class Play {
     }
     private String nextQuote() {
         return QUOTES[RANDOM.nextInt(QUOTES.length)];
+    }
+    private String nextQuoteAmbiance() {
+        return QUOTESAMBIANCE[RANDOM.nextInt(QUOTESAMBIANCE.length)];
     }
 
     public void newGame() {
@@ -112,9 +130,11 @@ public class Play {
         try (Scanner input = new Scanner(System.in)) {
             // we play while nbErrors is lower than max errors or user has found the word
             while (nbErrors < MAX_ERRORS) {
-                System.out.println("\nLe saviez-vous ?");
+                //Petite citation
+                System.out.println("\nVous mourrez moins bêtes (mais vous mourrez comme même):");
                 System.out.println(nextQuote());
                 System.out.println("\n--------------------------- ENTREZ UNE LETTRE ---*");
+                System.out.println(nextQuoteAmbiance());
                 String str = input.next();
                 if (str.length() > 1) {
                     str = str.substring(0, 1);
