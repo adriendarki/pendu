@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-// We are going to create a Hangman Game with Java keywords :)
+// Ce pendu a été optimisé de sorte à être plus fun à jouer
 public class Play {
 
     // Java Keywords
@@ -79,7 +79,8 @@ public class Play {
         try (Scanner input = new Scanner(System.in)) {
             // we play while nbErrors is lower than max errors or user has found the word
             while (nbErrors < MAX_ERRORS) {
-                System.out.println("\n           *--- ENTREZ UNE LETTRE ---*");
+                System.out.println("\n                      *--- ENTREZ UNE LETTRE ---*" +
+                        "\n                            (sans trembler)");
                 String str = input.next();
                 if (str.length() > 1) {
                     str = str.substring(0, 1);
@@ -87,30 +88,30 @@ public class Play {
                 enter(str);
                 System.out.println("\n" + wordFoundContent());
                 if (wordFound()) {
-                    System.out.println("\nYou win!");
+                    System.out.println("\nC'est gagné ! You did it !");
                     break;
                 } else {
-                    System.out.println("\n=> Nb tries remaining : " + (MAX_ERRORS - nbErrors));
+                    System.out.println("\n=> Il ne vous reste plus que " + (MAX_ERRORS - nbErrors) + " chances...") ;
                 }
             }
 
             if (nbErrors == MAX_ERRORS) {
-                System.out.println("\nYou lose!");
-                System.out.println("=> Word to find was : " + wordToFind);
+                System.out.println("\nPendu !");
+                System.out.println("=> C'était pourtant simple. Il fallait trouver : " + wordToFind);
             }
         }
     }
 
     public static void main(String[] args) {
-        System.out.println("\n \n ooooooooo.                               .o8                   .o. \n" +
-                "`888   `Y88.                            \"888                   888 \n" +
-                " 888   .d88'  .ooooo.  ooo. .oo.    .oooo888  oooo  oooo       888 \n" +
-                " 888ooo88P'  d88' `88b `888P\"Y88b  d88' `888  `888  `888       Y8P \n" +
-                " 888         888ooo888  888   888  888   888   888   888       `8' \n" +
-                " 888         888    .o  888   888  888   888   888   888       .o. \n" +
-                "o888o        `Y8bod8P' o888o o888o `Y8bod88P\"  `V88V\"V8P'      Y8P \n" +
-                "                                                                             \n" +
-                "                                                                             \n" +
+        System.out.println("\n \n   ooooooooo.                               .o8                   .o. \n" +
+                "  `888   `Y88.                            \"888                   888 \n" +
+                "   888   .d88'  .ooooo.  ooo. .oo.    .oooo888  oooo  oooo       888 \n" +
+                "   888ooo88P'  d88' `88b `888P\"Y88b  d88' `888  `888  `888       Y8P \n" +
+                "   888         888ooo888  888   888  888   888   888   888       `8' \n" +
+                "   888         888    .o  888   888  888   888   888   888       .o. \n" +
+                "  o888o        `Y8bod8P' o888o o888o `Y8bod88P\"  `V88V\"V8P'      Y8P \n" +
+                "                                                                             " +
+                "                                                                             " +
                 "                                                                             ");
 
         System.out.println("     .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@               \n" +
@@ -145,12 +146,13 @@ public class Play {
                 "       %@@@# *@@@@#                            /@@@@@. @@@@@  @@@@@@       \n" +
                 "                                              #@@@@@   @@@@@   %@@@@@      \n" +
                 "                                             ,@@@@@    @@@@@    /@@@@@     \n");
-        System.out.println("\n        *-------------An original game by-------------*");
-        System.out.println("        *=============================================*");
-        System.out.println("        |  A.Bouthet - E.Ziegelmeger - V.Fouillade    |");
-        System.out.println("        *-------------°=================°-------------*");
+        System.out.println("\n  ------------------------- An original game by -----------------------");
+        System.out.println("   \\---------*=============================================*---------/");
+        System.out.println("     \\-------|>  A.Bouthet - E.Ziegelmeger - V.Fouillade  <|-------/");
+        System.out.println("       \\-----*=============================================*-----/");
 
-        System.out.println("                 'Huit essais, pas un de plus...'       ");
+        System.out.println("               + ON EST GAI LE MATIN, ON EST PENDU LE SOIR +       " +
+                "\n              - Voltaire // Charlot ou la Comtesse de Givry - ");
         Play hangmanGame = new Play();
         hangmanGame.newGame();
         hangmanGame.play();
