@@ -150,6 +150,7 @@ public class Play {
         System.out.println("        |  A.Bouthet - E.Ziegelmeger - V.Fouillade    |");
         System.out.println("        *-------------°=================°-------------*");
 
+
         System.out.println("                 'Huit essais, pas un de plus...'       ");
         Play hangmanGame = new Play();
         hangmanGame.newGame();
