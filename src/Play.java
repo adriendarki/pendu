@@ -5,22 +5,8 @@ import java.util.Scanner;
 
 
 
-public class Play {
+public class Play extends Word {
 
-    // Java Keywords
-    public static final String[] WORDS = {
-            "ABSTRACT", "ASSERT", "BOOLEAN", "break", "byte",
-            "CASE", "CATCH", "CHAR", "CLASS", "CONST",
-            "CONTINUE", "DEFAULT", "DOUBLE", "DO", "ELSE",
-            "ENUM", "VLADIMIR", "FALSE", "FINAL", "FINALLY",
-            "FLOAT", "FOR", "GOTO", "IF", "IMPLEMENTS",
-            "IMPORT", "INSTANCEOF", "INT", "INTERFACE",
-            "LONG", "NATIVE", "NEW", "NULL", "PACKAGE",
-            "PRIVATE", "PROTECTED", "PUBLIC", "RETURN",
-            "SHORT", "STATIC", "STRICTFP", "SUPER", "SWITCH",
-            "SYNCHRONIZED", "THIS", "THROW", "THROWS",
-            "TRANSIENT", "TRUE", "TRY", "VOID", "VOLATILE", "WHILE"
-    };
 
     public static final Random RANDOM = new Random();
     public static final int MAX_ERRORS = 8;
