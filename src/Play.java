@@ -66,7 +66,7 @@ public class Play extends Word {
         try (Scanner input = new Scanner(System.in)) {
             // we play while nbErrors is lower than max errors or user has found the word
             while (nbErrors < MAX_ERRORS) {
-                System.out.println("\n           *--- ENTREZ UNE LETTRE ---*");
+                System.out.println(("\n           *--- ENTREZ UNE LETTRE ---*"));
                 String str = input.next();
                 if (str.length() > 1) {
                     str = str.substring(0, 1);
