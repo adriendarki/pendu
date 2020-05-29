@@ -2,24 +2,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.regex.*;
 
 
-public class Play {
+public class Play extends Word {
 
-    // Java Keywords
-    public static final String[] WORDS = {
-            "ABSTRACT", "ASSERT", "BOOLEAN", "break", "byte",
-            "CASE", "CATCH", "CHAR", "CLASS", "CONST",
-            "CONTINUE", "DEFAULT", "DOUBLE", "DO", "ELSE",
-            "ENUM", "VLADIMIR", "FALSE", "FINAL", "FINALLY",
-            "FLOAT", "FOR", "GOTO", "IF", "IMPLEMENTS",
-            "IMPORT", "INSTANCEOF", "INT", "INTERFACE",
-            "LONG", "NATIVE", "NEW", "NULL", "PACKAGE",
-            "PRIVATE", "PROTECTED", "PUBLIC", "RETURN",
-            "SHORT", "STATIC", "STRICTFP", "SUPER", "SWITCH",
-            "SYNCHRONIZED", "THIS", "THROW", "THROWS",
-            "TRANSIENT", "TRUE", "TRY", "VOID", "VOLATILE", "WHILE"
-    };
 
     public static final Random RANDOM = new Random();
     public static final int MAX_ERRORS = 8;
@@ -79,7 +66,7 @@ public class Play {
         try (Scanner input = new Scanner(System.in)) {
             // we play while nbErrors is lower than max errors or user has found the word
             while (nbErrors < MAX_ERRORS) {
-                System.out.println("\n           *--- ENTREZ UNE LETTRE ---*");
+                System.out.println(("\n           *--- ENTREZ UNE LETTRE ---*"));
                 String str = input.next();
                 if (str.length() > 1) {
                     str = str.substring(0, 1);
