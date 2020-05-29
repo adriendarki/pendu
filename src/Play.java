@@ -2,24 +2,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.regex.*;
+
 
 // Ce pendu a été optimisé de sorte à être plus fun à jouer
 public class Play {
-
-    // Java Keywords
-    public static final String[] WORDS = {
-            "ABSTRACT", "ASSERT", "BOOLEAN", "BREAK", "BYTE",
-            "CASE", "CATCH", "CHAR", "CLASS", "CONST",
-            "CONTINUE", "DEFAULT", "DOUBLE", "DO", "ELSE",
-            "ENUM", "VLADIMIR", "FALSE", "FINAL", "FINALLY",
-            "FLOAT", "FOR", "GOTO", "IF", "IMPLEMENTS",
-            "IMPORT", "INSTANCEOF", "INT", "INTERFACE",
-            "LONG", "NATIVE", "NEW", "NULL", "PACKAGE",
-            "PRIVATE", "PROTECTED", "PUBLIC", "RETURN",
-            "SHORT", "STATIC", "STRICTFP", "SUPER", "SWITCH",
-            "SYNCHRONIZED", "THIS", "THROW", "THROWS",
-            "TRANSIENT", "TRUE", "TRY", "VOID", "VOLATILE", "WHILE"
-    };
+  
     public static final String[] QUOTES =
             {
             "La pendaison est le fait de suspendre une personne, au moyen généralement d'une corde, mais aussi parfois de chaînes, par le cou ou par d'autres parties du corps.",
@@ -68,6 +56,9 @@ public class Play {
                     "'Coucou ! Tu veux voir mes bytes ?' ... Vous n'auriez jamais dû voler et avaler ces nanites...",
             };
 
+
+
+public class Play extends Word {
 
     public static final Random RANDOM = new Random();
     public static final int MAX_ERRORS = 9;
@@ -134,11 +125,13 @@ public class Play {
         try (Scanner input = new Scanner(System.in)) {
             // we play while nbErrors is lower than max errors or user has found the word
             while (nbErrors < MAX_ERRORS) {
+
                 //Petite citation
                 System.out.println("\nVous mourrez moins bêtes (mais vous mourrez comme même):");
                 System.out.println(nextQuote());
                 System.out.println("\n--------------------------- ENTREZ UNE LETTRE ---*");
                 System.out.println(nextQuoteAmbiance());
+
                 String str = input.next();
                 str = str.toUpperCase();
                 if (str.length() > 1) {
@@ -341,8 +334,12 @@ public class Play {
         System.out.println("    \\-------|>  A.Bouthet - E.Ziegelmeger - V.Fouillade  <|-------/");
         System.out.println("      \\-----*=============================================*-----/");
 
+
         System.out.println("             + ON EST GAI LE MATIN, ON EST PENDU LE SOIR +       " +
                 "\n            - Voltaire // Charlot ou la Comtesse de Givry - ");
+
+        System.out.println("                 'Huit essais, pas un de plus...'       ");
+
         Play hangmanGame = new Play();
         hangmanGame.newGame();
         hangmanGame.play();

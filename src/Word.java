@@ -1,0 +1,8 @@
+public class Word {
+
+    public static final String[] WORDS = {
+            "ACTEUR","ADAPTABILITE","ANALYSE","AUDIT","TEST","ATTAQUE","AUDITEUR","BOUCHON","BRANCHE","CASE","CHEMIN"
+            ,"CLASSE","CLIENT", "CODE","COMPILATEUR","CONDITION","CONFORMITE","CONTRAINTE", "DEBOQUER", "DEFAUT",
+            "DEPENDANCE","DISPONIBILITE","ECHEC"
+    };
+}
